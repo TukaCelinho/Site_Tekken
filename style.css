@@ -1,0 +1,167 @@
+/* style.css */
+/* Importando fontes legais do Google Fonts para dar personalidade [cite: 38] */
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;600&family=Open+Sans:wght@400;700&display=swap');
+
+/* Reset básico e organização das seções [cite: 41] */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fundo da página, paleta de cores e fonte principal [cite: 35, 36, 38] */
+body {
+    background-color: #0a0a0a; /* Fundo bem escuro, quase preto */
+    color: #f2f2f2; /* Texto claro para leitura fácil */
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+}
+
+/* Estilizando o cabeçalho e menu [cite: 39] */
+header {
+    background: linear-gradient(90deg, #c20000 0%, #000000 100%); /* Efeito de gradiente [cite: 42] */
+    padding: 30px 0;
+    text-align: center;
+    border-bottom: 3px solid #ff1a1a;
+}
+
+/* Títulos [cite: 37, 38] */
+h1 {
+    font-family: 'Teko', sans-serif;
+    font-size: 3.5rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px #ff0000; /* Sombra no texto [cite: 42] */
+}
+
+h2 {
+    font-family: 'Teko', sans-serif;
+    font-size: 2.2rem;
+    color: #ff3333;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+}
+
+/* Navegação do Menu [cite: 39] */
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    padding: 8px 15px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: 0.3s; /* Transição para o efeito hover [cite: 42] */
+}
+
+/* Efeito Hover nos links do menu [cite: 32] */
+nav a:hover {
+    background-color: #ff1a1a;
+    border: 1px solid #ff1a1a;
+    box-shadow: 0 0 10px #ff1a1a; 
+}
+
+/* Organização das seções com largura e centralização [cite: 41] */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    background-color: #141414;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); /* Sombra suave para dar profundidade */
+}
+
+/* Estilizando parágrafos e listas [cite: 37, 38] */
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+    font-size: 1.05rem;
+}
+
+ul {
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+    color: #cccccc;
+}
+
+/* Estilizando as Imagens com borda, arredondamento e sombra [cite: 40] */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #333;
+    display: block;
+    margin: 20px auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.8);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+/* Efeito Hover nas imagens [cite: 32] */
+img:hover {
+    transform: scale(1.02); /* Leve zoom quando o mouse passa por cima [cite: 42] */
+    border-color: #ff3333;
+}
+
+/* Linha separadora estilizada */
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(255,51,51,0.5), rgba(0,0,0,0));
+    margin: 40px 0;
+}
+
+/* Link externo geral [cite: 39] */
+p a {
+    color: #ff6666;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    text-decoration: underline;
+    color: #ff9999;
+}
+
+/* Rodapé e Botão Voltar ao Topo  */
+footer {
+    background-color: #050505;
+    text-align: center;
+    padding: 50px 20px;
+    border-top: 2px solid #333;
+}
+
+/* Estilizando o link para parecer um botão [cite: 39] */
+.btn-topo {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #cc0000;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 25px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.6);
+    transition: background 0.3s, transform 0.3s;
+}
+
+/* Efeito hover no botão [cite: 32] */
+.btn-topo:hover {
+    background-color: #ff1a1a;
+    transform: translateY(-4px); /* Botão "sobe" um pouquinho [cite: 42] */
+}
